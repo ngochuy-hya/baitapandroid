@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1085696280304",
+    "firebase_url": "https://video-fire-base-6e690-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "video-fire-base-6e690",
+    "storage_bucket": "video-fire-base-6e690.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085696280304:android:6c01356dc345dffc062435",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnilR73sW-q1ejihyxTQQVFe5tkKkUrHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

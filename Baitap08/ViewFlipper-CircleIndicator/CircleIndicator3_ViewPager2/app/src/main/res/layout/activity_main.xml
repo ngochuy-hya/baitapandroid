@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+        <!-- TextView căng ngang, căn giữa ở đầu màn hình -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CircleIndicator3 And ViewPager2"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF6B6B"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:letterSpacing="0.05"/>
+
+        <!-- LinearLayout chứa nội dung chính -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/headerText"
+            android:paddingTop="16dp">
+
+                <!-- ViewPager2 với card style -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginHorizontal="16dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewPager2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CircleIndicator3 -->
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/circleIndicator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:ci_width="10dp"
+                    app:ci_height="10dp"
+                    app:ci_margin="6dp"
+                    app:ci_gravity="center"/>
+        </LinearLayout>
+</RelativeLayout>
